@@ -20,8 +20,9 @@ function calculateFreeFallTime(height, intialVelocity, gravity){
     let time;
      //Write code here to calculate the fall time of the object
     let discriminant = intialVelocity * intialVelocity + 2 * gravity * height;
+    time = ( -intialVelocity + Math.sqrt(discriminant) ) / gravity;
      //Write code here to return the result
-
+    return time;
 }
 
 function compareFreeFallTime(){
@@ -52,4 +53,5 @@ function compareFreeFallTime(){
 
    
 }
+
 
